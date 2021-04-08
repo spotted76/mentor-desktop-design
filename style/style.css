@@ -30,7 +30,7 @@ body {
 /* Overall content of the page */
 #content {
     width: 75%;
-    margin: 7.5% auto;
+    margin: 3.5% auto;
     height: 100vh;
     background-color: var(--white);
     display: grid;
@@ -114,15 +114,15 @@ body {
 
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
-#lower .review:first-child {
-    align-self: flex-start;
+#lower .review:nth-child(2) {
+    margin-top: 2rem;
 }
 
 #lower .review:last-child {
-    align-self: flex-end;
+    margin-top:4rem;
 }
 
 /* Review Card */
@@ -261,12 +261,12 @@ body {
         flex-direction: column;
     }
 
-    #lower .review:first-child {
-        align-self: center;
+    #lower .review:nth-child(2) {
+        margin: 1rem 0;
     }
     
     #lower .review:last-child {
-        align-self: center;
+        margin: 1rem 0;
     }
 
     .review {
